@@ -1,0 +1,242 @@
+1. Command name and purpose:
+$ sudo apt-get update 
+
+This command updates the package index files from their sources.
+
+I typed:
+$  sudo apt-get update    
+
+and got:
+Hit:1 http://kali.download/kali kali-rolling InRelease
+Reading package lists... Done
+
+
+************************************************************************************************************************************************
+2. Command name and purpose:
+
+$ sudo apt-get upgrade -y 
+
+This command is used to install the latest versions of all packages presently installed on the system.
+
+I typed:
+$  sudo apt-get update    
+
+and got:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+
+
+************************************************************************************************************************************************
+3. Command name and purpose:
+
+ date
+
+This command can be used to print or set the system date and time.
+
+I typed:
+$  date   
+
+and got:
+Sat Jan 22 03:24:30 PM EST 2022
+
+
+
+************************************************************************************************************************************************
+4. Command name and purpose:
+$ pwd
+
+This command displays the name of the current directory you are working in.
+
+I typed:
+$ pwd 
+
+and got:
+/home/kali
+
+
+************************************************************************************************************************************************
+5. Command name and purpose:
+$ users 
+
+This command is used to display all users currently logged into the system
+
+I typed:
+$ users
+
+I got:
+kali
+
+
+************************************************************************************************************************************************
+6. Command name and purpose:
+$ whoami
+
+This command displays the name of the user using the system.
+
+
+I typed:
+$ whoami
+
+I got:
+kali
+
+
+
+************************************************************************************************************************************************
+7. Command name and purpose:
+
+$ cd
+
+cd stands for "Change Directory". This command is used to change the directory you are working in. 
+
+I typed:
+cd Desktop                                                         
+
+and got:
+(kali㉿kali)-[~/Desktop]
+└─$ 
+
+
+************************************************************************************************************************************************
+8. Command name and purpose:
+
+$ mkdir
+
+mkdir stands for "Make Directory". This command is used to create a new directory.
+
+I typed:
+$mkdir NewFolder                                                        
+
+and got:
+(This command doesn't return but this is what is in this directory after running it)
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+NewFolder
+
+
+
+
+************************************************************************************************************************************************
+9. Command name and purpose:
+$ rmdir 
+
+rmdir stands for "Remove Directory". This command is used to remove a directory.
+
+I typed:
+$rmdir NewFolder                                                        
+
+and got:
+(This command doesn't return but this is what is in this directory after running it)
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls
+
+
+************************************************************************************************************************************************
+
+10. Command name and purpose:
+
+$ mv 
+
+mv stands for "Move". This command is used to move/rename files from one directory to another. 
+
+I typed:
+$ mv /home/kali/Desktop/FileName /home/kali/Downloads                                                          
+
+and got:
+(This command doesn't return but this is what is in this directory after running it)
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls /home/kali/Downloads
+FileName
+
+
+
+************************************************************************************************************************************************
+11. Command name and purpose:
+$ cp 
+cp stands for "copy". This command is used to copy files and directories.
+
+I typed:
+$ cp /home/kali/Downloads/FileName /home/kali/Desktop  
+
+and got:
+(This command doesn't return but this is what is in this directories after running it)
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls /home/kali/Downloads                             
+FileName
+                                                                             
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ls /home/kali/Desktop                               
+FileName
+
+
+
+
+************************************************************************************************************************************************
+12. Command name and purpose:
+$ ln 
+
+ln stands for "links". This command is used to create both hard and softlinks for files/directories. Similar to shortcuts on windows file explorer.
+
+I typed:
+$ ln /home/kali/FileName /home/kali/Desktop/link 
+
+and got:
+(This command doesn't return but this is what is in this directory after running it)
+┌──(kali㉿kali)-[~]
+└─$ ls Desktop
+link  NewFile  NewFile.txt
+
+
+************************************************************************************************************************************************
+13. Command name and purpose:
+
+$passwd 
+
+This command allows the user to change the root password of the system. This is done after the user first enters in the correct root password.
+
+I typed:
+$ passwd   
+
+and got:
+Changing password for kali.
+Current password: 
+New password: 
+Retype new password: 
+************************************************************************************************************************************************
+14. Command name and purpose:
+
+$ sudo shutdown now
+
+This command allows you to shut down the system. 
+
+I typed:
+$ sudo shutdown now
+
+I got:
+(This command doesn't return but this is what is in this directory after running it)
+(System shuts down)
+************************************************************************************************************************************************
+15. Command name and purpose:
+sudo 
+
+This command is used to run commands as the root/host of the system. Similar to Administrator on Windows.
+
+
+
+I typed:
+$sudo
+
+and got:
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-D directory] [-g
+            group] [-h host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-D directory] [-g
+            group] [-h host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] file ...
+************************************************************************
